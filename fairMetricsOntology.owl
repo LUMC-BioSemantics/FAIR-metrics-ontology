@@ -91,6 +91,12 @@ fm:FM_000014 a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000332> ;
 	rdfs:label "is about resource"@en .
 # 
+# https://purl.org/fair-metrics/terms/FM_000015
+
+fm:FM_000015 a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000008> ;
+	rdfs:label "has measurement"@en .
+# 
 # 
 # 
 # #################################################################
@@ -105,6 +111,13 @@ fm:FM_000014 a owl:ObjectProperty ;
 <http://semanticscience.org/resource/SIO_000000> a owl:Class ;
 	rdfs:comment "Every thing is an entity." ;
 	rdfs:label "entity" .
+# 
+# http://semanticscience.org/resource/SIO_000070
+
+<http://semanticscience.org/resource/SIO_000070> a owl:Class ;
+	rdfs:subClassOf <http://semanticscience.org/resource/SIO_000000> ;
+	rdfs:comment "A measurement value is a quantitative description that reflects the magnitude of some attribute." ;
+	rdfs:label "measurement value" .
 # 
 # http://semanticscience.org/resource/SIO_000614
 
