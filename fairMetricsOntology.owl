@@ -37,6 +37,13 @@
 <http://semanticscience.org/resource/SIO_000332> a owl:ObjectProperty ;
 	rdfs:label "is about" .
 # 
+# https://purl.org/fair-metrics/terms/FM_000004
+
+fm:FM_000004 a owl:ObjectProperty ;
+	rdfs:domain <http://www.ebi.ac.uk/swo/interface/SWO_9000054> ;
+	rdfs:range fm:FM_000006 ;
+	rdfs:label "is implementation of"@en .
+# 
 # https://purl.org/fair-metrics/terms/FM_000008
 
 fm:FM_000008 a owl:ObjectProperty ;
@@ -49,7 +56,7 @@ fm:FM_000008 a owl:ObjectProperty ;
 fm:FM_000009 a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000332> ;
 	rdfs:range rdfs:Resource ;
-	rdfs:label "FAIR metric"@en .
+	rdfs:label "is about FAIR metric"@en .
 # 
 # https://purl.org/fair-metrics/terms/FM_000010
 
@@ -105,6 +112,11 @@ fm:FM_000014 a owl:ObjectProperty ;
 	rdfs:subClassOf <http://semanticscience.org/resource/SIO_000000> ;
 	rdfs:comment "An attribute is a characteristic of some entity." ;
 	rdfs:label "Attribute" .
+# 
+# http://www.ebi.ac.uk/swo/interface/SWO_9000054
+
+<http://www.ebi.ac.uk/swo/interface/SWO_9000054> a owl:Class ;
+	rdfs:label "application programming interface" .
 # 
 # http://www.w3.org/2000/01/rdf-schema#Resource
 
